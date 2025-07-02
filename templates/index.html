@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🖐️ Hand Gesture Recognition</h1>
+        <p class="subtitle">Show your hand to the webcam and watch your gesture get recognized in real time!</p>
+
+        <div class="video-box">
+            <img src="{{ url_for('video_feed') }}" alt="Live Gesture Feed">
+        </div>
+
+        <footer>
+            <p>Built with ❤️ using Flask, TensorFlow, and MediaPipe</p>
+        </footer>
+    </div>
+</body>
+</html>
